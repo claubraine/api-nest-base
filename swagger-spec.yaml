@@ -1,0 +1,34 @@
+openapi: 3.0.0
+paths:
+  /:
+    get:
+      operationId: AppController_getHello
+      parameters: []
+      responses:
+        "200":
+          description: ""
+info:
+  title: API Reader Wordpress
+  description: Leitura feeds portal wordpress
+  version: "1.0"
+  contact:
+    name: Claudinei de Jesus Braine
+    email: claubraine@yahoo.com.br
+    url: ""
+  license:
+    name: Info
+    url: ""
+tags: []
+servers:
+  - url: v1
+  - url: https
+components:
+  securitySchemes:
+    bearer:
+      scheme: bearer
+      bearerFormat: JWT
+      type: http
+  schemas: {}
+externalDocs:
+  description: Contacts Team
+  url: ""
